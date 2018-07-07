@@ -10,8 +10,25 @@
     <title>HOME | SZWAGER COMPANY</title>
 </head>
 
-<body>
+<body onload="slideshow()">
     <div class="container">
+
+        <div id="menu">
+            <div class="links">
+                <a href="#">
+                    <div class="link">HOME</div>
+                </a>
+                <a href="#">
+                    <div class="link">O NAS</div>
+                </a>
+                <a href="#">
+                    <div class="link">PORTFOLIO</div>
+                </a>
+                <a href="#">
+                    <div class="link">KONTAKT</div>
+                </a>
+            </div>
+        </div>
 
         <div class="flexbox-top-center grid1">
             <div class="menu-icon" onclick="Menu(this)">
@@ -21,29 +38,33 @@
             </div>
             <div class="name">SZWAGER&nbsp;COMPANY</div>
         </div>
-        <div class="flexbox-center-left grid2">
-            
-            <div id="menu">
-                <div class="links">
-                    <a href="#">
-                        <div class="link">HOME</div>
-                    </a>
-                    <a href="#">
-                        <div class="link">O NAS</div>
-                    </a>
-                    <a href="#">
-                        <div class="link">PORTFOLIO</div>
-                    </a>
-                    <a href="#">
-                        <div class="link">KONTAKT</div>
-                    </a>
+
+        <div class="grid2">
+            <div class="slideshow" id="slideshow">
+                <div class="slide">
                 </div>
+
+                <div class="slide">
+                </div>
+
+                <div class="slide">
+                </div>
+
+                <div class="slide">
+                </div>
+
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="showSlide(0)"></span>
+                <span class="dot" onclick="showSlide(1)"></span>
+                <span class="dot" onclick="showSlide(2)"></span>
+                <span class="dot" onclick="showSlide(3)"></span>
             </div>
         </div>
 
     </div>
 </body>
-
+    
 <script src="js/main.js"></script>
 
 </html>
