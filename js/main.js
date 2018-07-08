@@ -1,3 +1,18 @@
+window.addEventListener('load', function () {
+        setTimeout( function () {
+        document.getElementById("preloader").classList.add("fuccoff");
+    }, 2000);
+});
+
+function dontFuccOff () {
+    document.getElementById("preloader").classList.remove("fuccoff");
+    
+    setTimeout( function () {
+        document.getElementById("preloader").classList.add("fuccoff");
+    }, 5000);
+    
+}
+
 function Menu(x) {
     var menu = document.getElementById("menu");
 
@@ -18,19 +33,19 @@ function slideshow() {
     if (actualSlide == allSlides.length) {
         actualSlide = 0;
     }
-    
+
     if (actualSlide <= -1) {
         actualSlide = allSlides.length - 1;
     }
 
     translateX.style.transform = "translateX(-" + (actualSlide * 25) + "%)";
-    
-    for (var i=0; i < slideDots.length; i++) {
+
+    for (var i = 0; i < slideDots.length; i++) {
         slideDots[i].className = "dot";
     }
-    
+
     slideDots[actualSlide].classList.add("active");
-    
+
     clearTimeout(slideDuration);
     slideDuration = setTimeout(slideshow, 5000);
 }
