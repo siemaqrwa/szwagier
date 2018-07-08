@@ -1,16 +1,18 @@
 window.addEventListener('load', function () {
-        setTimeout( function () {
-        document.getElementById("preloader").classList.add("fuccoff");
-    }, 2000);
+
+    document.getElementById("preloader").classList.add("fuccoff");
+
+    slideshow();
+
 });
 
-function dontFuccOff () {
+function dontFuccOff() {
     document.getElementById("preloader").classList.remove("fuccoff");
-    
-    setTimeout( function () {
+
+    setTimeout(function () {
         document.getElementById("preloader").classList.add("fuccoff");
     }, 5000);
-    
+
 }
 
 function Menu(x) {
