@@ -31,12 +31,16 @@
         </div>
 
         <div class="flexbox-top-center grid1">
+
             <div class="menu-icon" onclick="Menu(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-            <div class="name">SZWAGER&nbsp;COMPANY</div>
+            <div class="name">
+                <img src="img/logo.png">
+                <!-- SZWAGER&nbsp;COMPANY -->
+            </div>
         </div>
 
         <div class="grid2">
@@ -54,17 +58,33 @@
                 </div>
 
             </div>
-            <div class="dots">
+            <div class="dots hide-small">
                 <span class="dot" onclick="showSlide(0)"></span>
                 <span class="dot" onclick="showSlide(1)"></span>
                 <span class="dot" onclick="showSlide(2)"></span>
                 <span class="dot" onclick="showSlide(3)"></span>
             </div>
+
+            <div class="arrows hide-small">
+
+                <div class="arrow-left-box" onclick="moveSlide(-1)">
+
+                    <div class="arrow-left" onclick=""></div>
+
+                </div>
+
+                <div class="arrow-right-box" onclick="moveSlide(1)">
+
+                    <div class="arrow-right"></div>
+
+                </div>
+
+            </div>
         </div>
 
     </div>
 </body>
-    
+
 <script src="js/main.js"></script>
 
 </html>
