@@ -1,0 +1,148 @@
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 400%;
+    display: flex;
+    flex-direction: row;
+    transition: transform 1s ease-out;
+    transform: translateX(0%);
+}
+
+.slide {
+    padding: 64px;
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-size: cover;
+}
+
+.slide:nth-child(1) {
+    background-image: url(../img/slide1.jpg);
+    background-position: left;
+}
+
+.slide:nth-child(2) {
+    background-image: url(../img/slide2.jpg);
+    background-position: center;
+}
+
+.slide:nth-child(3) {
+    background-image: url(../img/slide3.jpg);
+    background-position: left;
+}
+
+.slide:nth-child(4) {
+    background-image: url(../img/slide4.jpg);
+    background-position: left;
+}
+
+.slide-text {
+    padding: 16px;
+    background: rgba(241, 241, 241, .3);
+}
+
+.dots {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    user-select: none;
+}
+
+.dot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background: #f1f1f1;
+    transform: rotate(45deg);
+    position: relative;
+    cursor: pointer;
+}
+
+.dot::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 1px solid #f1f1f1;
+    transition: top .2s ease-in-out,
+    bottom .2s ease-in-out,
+    left .2s ease-in-out,
+    right .2s ease-in-out;
+}
+
+.dot.active::after {
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+}
+
+.arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.arrows .arrow-left-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgba(241, 241, 241, .3) 50%, rgba(241, 241, 241, 0) 50%);
+    background-size: 200%;
+    background-position: 100%;
+    transition: background-position .2s ease-in-out;
+}
+
+.arrows .arrow-left-box:hover {
+    background-position: 0%;
+}
+
+.arrows .arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    height: 32px;
+    width: 32px;
+    border: solid #f1f1f1;
+    border-width: 0px 0px 4px 4px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.arrows .arrow-right-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgba(241, 241, 241, 0) 50%, rgba(241, 241, 241, .3) 50%);
+    background-size: 200%;
+    background-position: 0%;
+    transition: background-position .2s ease-in-out;
+}
+
+.arrows .arrow-right-box:hover {
+    background-position: 100%;
+}
+
+.arrows .arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    height: 32px;
+    width: 32px;
+    border: solid #f1f1f1;
+    border-width: 4px 4px 0px 0px;
+    transform: translateY(-50%) rotate(45deg);
+}
