@@ -1,23 +1,23 @@
 window.addEventListener('load', function () {
-    var blackCover = document.getElementsByClassName("black-cover");
 
     document.getElementById("preloader").classList.add("fuccoff");
-    
-    
-    for (var i; i < blackCover.length; i++) {
-        blackCover[i].classList.add("fuccoff");
-    }
+
+    document.getElementById("grid2").classList.add("fuccoff");
 
 });
 
-function dontFuccOff() {
+function delay(URL) {
     document.getElementById("preloader").classList.remove("fuccoff");
     document.getElementById("preloader").innerHTML = "";
+    setTimeout(function () {
+        window.location = URL;
+    }, 700);
 }
 
-function Menu(x) {
+function Menu() {
     var menu = document.getElementById("menu");
+    var menuIcon = document.getElementById("menu-icon");
 
-    x.classList.toggle("active");
+    menuIcon.classList.toggle("active");
     menu.classList.toggle("active");
 }

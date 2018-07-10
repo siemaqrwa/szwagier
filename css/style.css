@@ -170,6 +170,7 @@ body {
     width: 50%;
     transform: translateX(-100%);
     transition: transform 0.4s 0.4s;
+    overflow-y: auto;
 }
 
 #menu.active .links {
@@ -301,7 +302,35 @@ body {
 .foto-right,
 .foto-left {
     position: relative;
-    min-height: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 span,
+p {
+    background-size: 200%;
+    background-position: 100%;
+    background-image: linear-gradient(to right, transparent 50%, #333 50%);
+    transition: background-position .5s .7s ease-out;
+}
+
+.black-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 200%;
+    background-position: 100%;
+    background-image: linear-gradient(to right,transparent 50%, #333 50%);
+    transition: background-position .5s .7s ease-out;
+}
+
+.fuccoff .black-cover,
+.fuccoff h1 span,
+.fuccoff p {
+    background-position: 0%;
 }
 
 .foto-right::before {
@@ -348,13 +377,11 @@ body {
 
 .about-foto-1 {
     background-image: url(../img/slide1.jpg);
-    background-size: cover;
     margin: 16px;
 }
 
 .about-foto-2 {
     background-image: url(../img/slide3.jpg);
-    background-size: cover;
     margin: 16px;
 }
 
