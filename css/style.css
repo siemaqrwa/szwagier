@@ -22,6 +22,10 @@ body {
     color: #333;
 }
 
+a {
+    cursor: pointer;
+}
+
 /* LAYOUT SECTION */
 
 .container {
@@ -444,6 +448,11 @@ footer .made:hover .fa-heart {
 @media (max-width:993px) {
     .hide-small {
         display: none !important;
+    }
+    
+    #preloader {
+        font-size: .5em;
+        padding: 0;
     }
 
     .container {
