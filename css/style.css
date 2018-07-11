@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400');
 @import url('slideshow.css');
+@import url('portfolio.css');
 
 /* RESET SECTION */
 
@@ -155,7 +156,7 @@ a {
 #menu {
     position: fixed;
     top: 0;
-    left: 100px;
+    left: 120px;
     right: 0;
     bottom: 0;
     background: rgba(255, 255, 255, .7);
@@ -298,8 +299,7 @@ a {
 .content .table p {
     font-size: .5em;
     text-indent: 16px;
-    text-align: justify;
-    text-align-last: left;
+    text-align: left;
     margin: 16px;
 }
 
@@ -312,7 +312,8 @@ a {
 }
 
 h1 span,
-p {
+p,
+.year span {
     background-size: 200%;
     background-position: 100%;
     background-image: linear-gradient(to right, transparent 50%, #333 50%);
@@ -325,15 +326,16 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: 200%;
-    background-position: 100%;
-    background-image: linear-gradient(to right,transparent 50%, #333 50%);
-    transition: background-position .5s .7s ease-out;
+    background: #333;
+    transition: left .5s .7s ease-out;
 }
 
-.fuccoff .black-cover,
+.fuccoff .black-cover {
+    left: 100%;
+}
 .fuccoff h1 span,
-.fuccoff p {
+.fuccoff p,
+.fuccoff .year span {
     background-position: 0%;
 }
 
@@ -402,6 +404,17 @@ footer .fa-heart {
 footer .made:hover .fa-heart {
     color: red;
     transform: scale(1.2);
+    animation: pulse 1.17s .4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%,20%,40%,100% {
+        transform: scale(1.2);
+    }
+    
+    10%,30% {
+        transform: scale(1.3);
+    }
 }
 
 

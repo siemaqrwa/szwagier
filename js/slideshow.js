@@ -22,7 +22,7 @@ function slideshow() {
         actualSlide = allSlides.length - 1;
     }
 
-    translateX.style.transform = "translateX(-" + (actualSlide * 25) + "%)";
+    translateX.style.transform = "translateX(-" + ( actualSlide * ( 100 / Number(allSlides.length) ) ) + "%)";
 
     for (var i = 0; i < slideDots.length; i++) {
         slideDots[i].className = "dot";
