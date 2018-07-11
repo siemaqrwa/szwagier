@@ -2,7 +2,7 @@ var actualSlide = -1;
 var translateX = document.getElementById("slideshow");
 var allSlides = document.getElementsByClassName("slide");
 var slideDots = document.getElementsByClassName("dot");
-var slideDuration = setTimeout(slideshow, 5000);
+var slideDuration;
 
 window.addEventListener('load', function () {
 
