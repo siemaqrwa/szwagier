@@ -313,8 +313,9 @@ a {
 
 h1 span,
 p,
-.year span {
-    background-size: 200%;
+.year span,
+.stuff .text{
+    background-size: 210%;
     background-position: 100%;
     background-image: linear-gradient(to right, transparent 50%, #333 50%);
     transition: background-position .5s .7s ease-out;
@@ -335,7 +336,8 @@ p,
 }
 .fuccoff h1 span,
 .fuccoff p,
-.fuccoff .year span {
+.fuccoff .year span,
+.fuccoff .stuff .text {
     background-position: 0%;
 }
 

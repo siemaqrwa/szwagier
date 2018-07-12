@@ -16,6 +16,8 @@
     width: 100%;
     float: left;
     background-size: cover;
+    position: relative;
+    text-align: center;
 }
 
 .slide:nth-child(1) {
@@ -38,9 +40,32 @@
     background-position: left;
 }
 
+.slide::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+}
+
 .slide-text {
-    padding: 16px;
-    background: rgba(241, 241, 241, .3);
+    font-size: .75em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.slide-text * {
+    margin: 32px 0px;
+    color: #fdfdfd;
+    
+}
+
+.slide-text p {
 }
 
 .dots {
