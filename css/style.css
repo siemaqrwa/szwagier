@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400');
 @import url('slideshow.css');
 @import url('portfolio.css');
+@import url('contact.css');
 
 /* RESET SECTION */
 
@@ -39,6 +40,10 @@ a {
     grid-template-columns: 120px auto;
 }
 
+.content {
+    padding: 7vw;
+    min-height: 100vh;
+}
 
 .flexbox-center-center {
     display: flex;
@@ -275,10 +280,6 @@ a {
 
 /* CONTENT SECTION */
 
-.content {
-    padding: 7vw;
-}
-
 .content .table {
     display: grid;
     margin-bottom: 128px;
@@ -312,9 +313,10 @@ a {
 }
 
 h1 span,
-p,
+p:not(.slide-text-p),
 .year span,
-.stuff .text{
+.stuff .text,
+.contact-info span {
     background-size: 210%;
     background-position: 100%;
     background-image: linear-gradient(to right, transparent 50%, #333 50%);
@@ -337,7 +339,8 @@ p,
 .fuccoff h1 span,
 .fuccoff p,
 .fuccoff .year span,
-.fuccoff .stuff .text {
+.fuccoff .stuff .text,
+.fuccoff .contact-info span {
     background-position: 0%;
 }
 

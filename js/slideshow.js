@@ -6,7 +6,7 @@ var slideDuration;
 
 window.addEventListener('load', function () {
 
-    // slideshow();
+    slideshow();
 
 });
 

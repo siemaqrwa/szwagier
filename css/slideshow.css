@@ -48,7 +48,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .slide-text {
@@ -62,10 +62,19 @@
 .slide-text * {
     margin: 32px 0px;
     color: #fdfdfd;
-    
+
 }
 
-.slide-text p {
+.slide-text a {
+    text-decoration: none;
+    padding: 16px;
+    border: 2px solid #fdfdfd;
+    pointer-events: all;
+}
+
+.slide-text a:hover {
+    background: #fdfdfd;
+    color: #222;
 }
 
 .dots {
@@ -108,15 +117,7 @@
     right: -4px;
 }
 
-.arrows {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.arrows .arrow-left-box {
+.arrow-left-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -129,11 +130,11 @@
     transition: background-position .2s ease-in-out;
 }
 
-.arrows .arrow-left-box:hover {
+.arrow-left-box:hover {
     background-position: 0%;
 }
 
-.arrows .arrow-left {
+.arrow-left {
     position: absolute;
     top: 50%;
     left: 32px;
@@ -144,7 +145,7 @@
     transform: translateY(-50%) rotate(45deg);
 }
 
-.arrows .arrow-right-box {
+.arrow-right-box {
     position: absolute;
     top: 0;
     right: 0;
@@ -157,11 +158,11 @@
     transition: background-position .2s ease-in-out;
 }
 
-.arrows .arrow-right-box:hover {
+.arrow-right-box:hover {
     background-position: 100%;
 }
 
-.arrows .arrow-right {
+.arrow-right {
     position: absolute;
     top: 50%;
     right: 32px;
@@ -170,4 +171,26 @@
     border: solid #f1f1f1;
     border-width: 4px 4px 0px 0px;
     transform: translateY(-50%) rotate(45deg);
+}
+
+@media (max-width:993px) {
+    
+    .arrow-left,
+    .arrow-right {
+        height: 16px;
+        width: 16px;
+    }
+    
+    .arrow-left {
+        left: 16px;
+    }
+    
+    .arrow-right {
+        right: 16px;
+    }
+
+    .arrow-left-box,
+    .arrow-right-box {
+        width: 40px;
+    }
 }

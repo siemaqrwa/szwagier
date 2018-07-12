@@ -1,0 +1,65 @@
+.table-3 {
+    text-align: center;
+}
+
+.contact-card .fas {
+    padding: 16px;
+}
+
+.contact-card .icon {
+    position: relative;
+    height: 128px;
+    width: 128px;
+    background-size: 210%;
+    background-position: 100%;
+    background-image: linear-gradient(to right, #eee 50%, #333 50%);
+    transition: background-position .5s .7s ease-out;
+    margin: auto;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fuccoff .icon {
+    background-position: 0%;
+}
+
+.contact-info {
+    margin-top: 32px;
+    font-size: .75em;
+}
+
+.map {
+    height: 102vh;
+    background: repeating-linear-gradient( 45deg,
+    #fdfdfd,
+    #fdfdfd 20px,
+    #eee 20px,
+    #eee 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width:993px) {
+
+    .content .table-3 {
+        grid-template-columns: 33% auto 33%;
+        margin-top: 64px;
+    }
+}
+
+@media (max-width:993px) {
+    .contact-card {
+        margin-bottom: 32px;
+        font-size: .75em;
+    }
+    
+    .contact-card .icon {
+        height: 64px;
+        width: 64px;
+        font-size: 32px;
+    }
+}
