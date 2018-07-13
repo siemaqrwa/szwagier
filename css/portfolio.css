@@ -52,6 +52,7 @@
 
 .box .stuff .cell {
     margin: 6px;
+    margin-bottom: 12px;
 }
 
 .box .stuff .cell:nth-child(1) .color {
@@ -163,4 +164,14 @@
         position: absolute;
         top: 50%;
     }
+}
+
+@media (max-width:380px) {
+
+    .box .stuff {
+        margin: 5vw;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
 }
