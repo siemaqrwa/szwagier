@@ -318,7 +318,7 @@ h1 span,
 p:not(.slide-text-p),
 .year span,
 .stuff .text,
-.contact-info span {
+.contact-info span{
     background-size: 210%;
     background-position: 100%;
     background-image: linear-gradient(to right, transparent 50%, #333 50%);
@@ -342,7 +342,8 @@ p:not(.slide-text-p),
 .fuccoff p,
 .fuccoff .year span,
 .fuccoff .stuff .text,
-.fuccoff .contact-info span {
+.fuccoff .contact-info span,
+.fuccoff input {
     background-position: 0%;
 }
 

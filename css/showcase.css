@@ -170,6 +170,11 @@ a {
 
 @media (max-width:993px) {
     
+    #preloader {
+        font-size: .5em;
+        padding: 0;
+    }
+    
     .dots {
         display: none;
     }

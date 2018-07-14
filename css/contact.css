@@ -1,11 +1,203 @@
-.map {
+::placeholder {
+    color: #999;
+}
+
+.form {
+    background: #ddd;
+    margin: 32px 0px;
+    padding: 32px 64px;
+    position: relative;
+    margin-bottom: 256px;
+}
+
+.form::before {
+    content: "";
+    position: absolute;
+    right: -24px;
+    top: -24px;
+    width: 48px;
+    height: 128px;
+    background: #444;
+    z-index: 2;
+}
+
+.form::after {
+    content: "";
+    position: absolute;
+    right: -24px;
+    top: -24px;
+    width: 256px;
+    height: 48px;
+    background: #444;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    width: calc(100% - 16px);
+}
+
+.input-box .border-bottom {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    right: 8px;
+    height: 2px;
+    background: #222;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.input-box textarea + .border-bottom {
+    bottom: 16px;
+}
+
+.input-box input:focus + .border-bottom,
+.input-box textarea:focus + .border-bottom {
+    transform: scaleX(1);
+}
+
+input {
+    margin: 8px;
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #999;
+    outline: none;
+    font-size: .75em;
+}
+
+input[type="submit"] {
+    border: 2px solid #999;
+    color: #999;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #333;
+    background: #333;
+    color: #fdfdfd;
+}
+
+textarea {
+    width: calc(100% - 16px);
+    height: calc(1em + 22px);
+    margin: 8px;
+    padding: 8px 16px;
+    transition: height .4s ease-in-out;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #999;
+    outline: none;
+    resize: none;
+    font-size: .75em;
+}
+
+textarea:focus {
     height: 30vh;
-    background: repeating-linear-gradient( 45deg,
-    #fdfdfd,
-    #fdfdfd 20px,
-    #eee 20px,
-    #eee 40px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+textarea:not(:focus)::-webkit-scrollbar {
+    display: none;
+}
+
+textarea::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #222;
+}
+
+.contact {
+    background: #ddd;
+    margin: 32px 0px;
+    padding: 64px 128px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-row-gap: 32px;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: -24px;
+    width: 48px;
+    height: 128px;
+    background: #444;
+    z-index: 2;
+}
+
+.contact::after {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: -24px;
+    width: 256px;
+    height: 48px;
+    background: #444;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@media (max-width:993px) {
+
+    .contact {
+        grid-template-columns: 100%;
+        text-align: center;
+        padding: 32px 0px;
+    }
+
+    .input-grid {
+        grid-template-columns: 100%;
+    }
+
+    .form {
+        margin-bottom: 128px;
+    }
+
+    .text-right {
+        text-align: center;
+    }
+    
+    .form,
+    .contact {
+        font-size: .75em;
+    }
+
+    .form::before,
+    .form::after {
+        right: -8px;
+        top: -8px;
+    }
+
+    .contact::before,
+    .contact::after {
+        left: -8px;
+        top: -8px;
+    }
+
+    .form::before,
+    .contact::before {
+        width: 16px;
+    }
+
+    .form::after,
+    .contact::after {
+        height: 16px;
+    }
 }
