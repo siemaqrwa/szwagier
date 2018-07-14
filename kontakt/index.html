@@ -13,12 +13,6 @@
     <script src="../js/jquery.easeScroll.js"></script>
     <script src="../js/main.js"></script>
 
-    <style>
-        * {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -66,12 +60,14 @@
         <div class="grid2" id="grid2">
 
 
-            <div class="content">
+            <div class="content sans">
 
                 <h1><span>ZBUDUJMY COŚ RAZEM!</span></h1>
 
                 <div class="form">
-                    <form>
+                    <form action="https://formspree.io/szuszel1999@gmail.com" method="POST">
+                        <input type="hidden" name="_language" value="pl">
+                        <input type="hidden" name="_subject" value="Nowa Wiadomość!">
                         <div class="input-grid">
                             <div class="input-box">
                                 <input type="text" placeholder="Twoję imię..." required>
@@ -82,9 +78,9 @@
                                 <span class="border-bottom"></span>
                             </div>
                         </div>
-                            <div class="input-box">
-                        <textarea placeholder="Twoja wiadomość..." required></textarea>
-                                <span class="border-bottom"></span>
+                        <div class="input-box">
+                            <textarea placeholder="Twoja wiadomość..." required></textarea>
+                            <span class="border-bottom"></span>
                         </div>
 
                         <input type="submit" value="Wyślij">
