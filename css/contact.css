@@ -71,7 +71,7 @@ input {
     background: transparent;
     border-bottom: 2px solid #999;
     outline: none;
-    font-size: .75em;
+    font-size: .5em;
 }
 
 input[type="submit"] {
@@ -97,7 +97,7 @@ textarea {
     border-bottom: 2px solid #999;
     outline: none;
     resize: none;
-    font-size: .75em;
+    font-size: .5em;
 }
 
 textarea:focus {

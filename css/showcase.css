@@ -17,6 +17,7 @@ body {
     background: #fdfdfd;
     position: relative;
     color: #333;
+    overflow: hidden;
 }
 
 a {
