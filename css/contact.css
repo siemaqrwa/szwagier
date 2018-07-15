@@ -44,6 +44,15 @@
     width: calc(100% - 16px);
 }
 
+.input-box .border-bottom-background {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    right: 8px;
+    height: 2px;
+    background: #999;
+}
+
 .input-box .border-bottom {
     position: absolute;
     left: 8px;
@@ -53,10 +62,7 @@
     background: #222;
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
-}
-
-.input-box textarea + .border-bottom {
-    bottom: 16px;
+    z-index: 3;
 }
 
 .input-box input:focus + .border-bottom,
@@ -89,12 +95,10 @@ input[type="submit"]:hover {
 textarea {
     width: calc(100% - 16px);
     height: calc(1em + 22px);
-    margin: 8px;
     padding: 8px 16px;
     transition: height .4s ease-in-out;
     border: none;
     background: transparent;
-    border-bottom: 2px solid #999;
     outline: none;
     resize: none;
     font-size: .5em;
@@ -106,17 +110,6 @@ textarea:focus {
 
 textarea:not(:focus)::-webkit-scrollbar {
     display: none;
-}
-
-textarea::after {
-    display: block;
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background: #222;
 }
 
 .contact {
