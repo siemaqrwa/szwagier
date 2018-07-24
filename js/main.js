@@ -22,4 +22,8 @@ function Menu() {
     menu.classList.toggle("active");
 }
 
-$("body").easeScroll();
+
+
+$(document).ready(function() {
+    $("body").easeScroll();
+});
