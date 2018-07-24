@@ -1,3 +1,11 @@
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    color: #999;
+}
+
 ::placeholder {
     color: #999;
 }
@@ -60,13 +68,18 @@
     right: 8px;
     height: 2px;
     background: #222;
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
     z-index: 3;
 }
 
 .input-box input:focus + .border-bottom,
 .input-box textarea:focus + .border-bottom {
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
@@ -102,6 +115,7 @@ textarea {
     height: calc(1em + 22px);
     padding: 8px 16px;
     margin: 8px;
+    -webkit-transition: height .4s ease-in-out;
     transition: height .4s ease-in-out;
     border: none;
     background: transparent;

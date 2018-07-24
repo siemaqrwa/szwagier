@@ -24,6 +24,6 @@ function Menu() {
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     $("body").easeScroll();
 });
