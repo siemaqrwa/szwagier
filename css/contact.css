@@ -186,7 +186,7 @@ textarea:not(:focus)::-webkit-scrollbar {
     .text-right {
         text-align: center;
     }
-    
+
     .form,
     .contact {
         font-size: .75em;

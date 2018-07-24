@@ -192,17 +192,17 @@
 }
 
 @media (max-width:993px) {
-    
+
     .arrow-left,
     .arrow-right {
         height: 16px;
         width: 16px;
     }
-    
+
     .arrow-left {
         left: 16px;
     }
-    
+
     .arrow-right {
         right: 16px;
     }

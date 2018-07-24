@@ -76,7 +76,7 @@
 }
 
 .box .stuff .cell:nth-child(5) .color,
-.box .stuff .cell:nth-child(11) .color{
+.box .stuff .cell:nth-child(11) .color {
     background-image: url("../img/slide5.jpg");
 }
 
@@ -171,7 +171,7 @@
         -ms-flex-align: center;
         align-items: center;
     }
-    
+
     #modal .modal-content {
         position: absolute;
         top: 50%;
