@@ -22,8 +22,20 @@ function Menu() {
     menu.classList.toggle("active");
 }
 
+function isIEorEDGE() {
+    if (navigator.appName == 'Microsoft Internet Explorer') {
+        return true; // IE
+    } else if (navigator.appName == "Netscape") {
+        return navigator.appVersion.indexOf('Edge') > -1; // EDGE
+    }
 
+    return false;
+}
 
-$(document).ready(function () {
-    $("body").easeScroll();
-});
+if (isIEorEDGE() == false) {
+
+    $(document).ready(function () {
+        $("body").easeScroll();
+    });
+
+}
