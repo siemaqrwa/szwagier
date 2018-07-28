@@ -346,6 +346,7 @@ a {
 /* CONTENT SECTION */
 
 .content .table {
+    display: -ms-grid;
     display: grid;
     margin-bottom: 128px;
 }
@@ -560,6 +561,16 @@ footer .made:hover .fa-heart {
     }
 }
 
+.content .table > div:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+
+.content .table > div:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+
 /* BIG SCREEN SECTION */
 
 @media (min-width:993px) {
@@ -568,10 +579,13 @@ footer .made:hover .fa-heart {
     }
 
     .content .table-1 {
+        -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% auto;
     }
 
+
     .content .table-2 {
+        -ms-grid-columns: 60% 40%;
         grid-template-columns: auto 40%;
     }
 

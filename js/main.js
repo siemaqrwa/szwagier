@@ -24,6 +24,7 @@ function Menu() {
 
 function isIEorEDGE() {
     if (navigator.appName == 'Microsoft Internet Explorer') {
+        document.getElementById("grid2").style.marginLeft = "120px";
         return true; // IE
     } else if (navigator.appName == "Netscape") {
         return navigator.appVersion.indexOf('Edge') > -1; // EDGE
@@ -38,4 +39,19 @@ if (isIEorEDGE() == false) {
         $("body").easeScroll();
     });
 
+}
+
+function isIE(userAgent) {
+  userAgent = userAgent || navigator.userAgent;
+  return userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1 || userAgent.indexOf("Edge/") > -1;
+}
+
+if (isIE() == true) {
+    $(".grid2").css({
+        "margin-left": "120px"
+    });
+    
+    $(".cell").css({
+        "display": "inline-block"
+    });
 }
