@@ -42,7 +42,9 @@ a {
     left: 0;
     bottom: 0;
     right: 0;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 120px calc(100% - 120px);
     grid-template-columns: 120px auto;
 }
 
@@ -100,6 +102,8 @@ a {
 }
 
 .grid1 {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
     position: relative;
 }
 
@@ -133,6 +137,8 @@ a {
 }
 
 .grid2 {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
     font-size: 2em;
     position: relative;
     overflow-x: hidden;
@@ -607,6 +613,7 @@ footer .made:hover .fa-heart {
     }
 
     .container {
+    -ms-grid-columns: 60px calc(100% - 60px);
         grid-template-columns: 60px auto;
     }
 
