@@ -386,16 +386,17 @@ p::selection {
 }
 
 .contact div:nth-child(even)::-moz-selection,
-.contact div:nth-child(even) span::-moz-selection{
+.contact div:nth-child(even) span::-moz-selection {
     background: #e3554f;
     color: #fdfdfd;
 }
 
 .contact div:nth-child(even)::selection,
-.contact div:nth-child(even) span::selection{
+.contact div:nth-child(even) span::selection {
     background: #e3554f;
     color: #fdfdfd;
 }
+
 .content .table {
     display: -ms-grid;
     display: grid;
@@ -408,6 +409,10 @@ p::selection {
 
 .content .table h1 {
     margin: 16px;
+}
+
+.content h1 span {
+    position: relative;
 }
 
 .content .table-2 {
@@ -429,10 +434,7 @@ p::selection {
     background-position: center;
 }
 
-h1 span,
-p:not(.slide-text-p),
-.year span,
-.stuff .text,
+p,
 .contact-info span {
     background-size: 210%;
     background-position: right;
@@ -459,10 +461,7 @@ p:not(.slide-text-p),
     left: 100%;
 }
 
-.fuccoff h1 span,
 .fuccoff p,
-.fuccoff .year span,
-.fuccoff .stuff .text,
 .fuccoff .contact-info span {
     background-position: left;
 }
@@ -661,7 +660,7 @@ footer .made:hover .fa-heart {
     }
 
     .container {
-    -ms-grid-columns: 60px calc(100% - 60px);
+        -ms-grid-columns: 60px calc(100% - 60px);
         grid-template-columns: 60px auto;
     }
 
@@ -1009,18 +1008,22 @@ footer .made:hover .fa-heart {
     }
 }
 
-    .box .year::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 90%;
-        height: 1px;
-        background: #ddd;
+.box .year::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+    background: #ddd;
 
-    }
+}
+
+.box .year span {
+    position: relative;
+}
 
 .box .stuff {
     margin: 5vw;
@@ -1311,12 +1314,12 @@ footer .made:hover .fa-heart {
     position: relative;
 }
 
-.input-box:nth-child(1){
+.input-box:nth-child(1) {
     -ms-grid-column: 1;
     -ms-grid-row: 1;
 }
 
-.input-box:nth-child(2){
+.input-box:nth-child(2) {
     -ms-grid-column: 2;
     -ms-grid-row: 1;
 }
@@ -1531,6 +1534,3 @@ textarea:not(:focus)::-webkit-scrollbar {
         height: 16px;
     }
 }
-
-
-
