@@ -27,6 +27,18 @@ body {
     user-select: none;
 }
 
+*::-moz-selection {
+    background: #e3554f;
+    color: #fdfdfd;
+}
+
+*::selection {
+    background: #e3554f;
+    color: #fdfdfd;
+}
+
+}
+
 a {
     cursor: pointer;
 }
@@ -362,39 +374,12 @@ p {
     user-select: text;
 }
 
-p::-moz-selection {
-    background: #e3554f;
-    color: #fdfdfd;
-}
-
-p::selection {
-    background: #e3554f;
-    color: #fdfdfd;
-}
-
 
 .contact div:nth-child(even) {
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
-}
-
-.contact div:nth-child(even)::-moz-selection {
-    background: #e3554f;
-    color: #fdfdfd;
-}
-
-.contact div:nth-child(even)::-moz-selection,
-.contact div:nth-child(even) span::-moz-selection {
-    background: #e3554f;
-    color: #fdfdfd;
-}
-
-.contact div:nth-child(even)::selection,
-.contact div:nth-child(even) span::selection {
-    background: #e3554f;
-    color: #fdfdfd;
 }
 
 .content .table {
