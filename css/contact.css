@@ -86,6 +86,7 @@
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    will-change: transform;
     z-index: 3;
 }
 
@@ -129,6 +130,7 @@ textarea {
     margin: 8px;
     -webkit-transition: height .4s ease-in-out;
     transition: height .4s ease-in-out;
+    will-change: height;
     border: none;
     background: transparent;
     outline: none;
