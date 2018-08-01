@@ -7,15 +7,15 @@
     <meta name="theme-color" content="#9e2c27">
     <meta name="msapplication-navbutton-color" content="#9e2c27">
     <meta name="apple-mobile-web-app-status-bar-style" content="#9e2c27">
+    <meta name="description" content="Firma ogólnobudowlana Adellston Dawid Słoneczna 16, Dzierzgoń 82-440 tel. 530 815 000">
     <link rel="icon" href="../../img/icon.png">
-    <link rel="stylesheet" href="../../css/showcase.css">
-    <link rel="stylesheet" href="../../css/slideshow.css">
+    <link rel="stylesheet" href="../../css/showcase.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>PRZYKŁAD | SZWAGER COMPANY</title>
 
     <style>
         .slideshow {
-            width: 500%;
+            width: 800%;
         }
 
     </style>
@@ -31,18 +31,35 @@
     <div class="container">
         <div class="slideshow" id="slideshow">
             <div class="slide">
+                <img src="../../img/slide1.jpg" alt="Zdjęcie">
             </div>
 
             <div class="slide">
+                <img src="../../img/slide2.jpg" alt="Zdjęcie">
             </div>
 
             <div class="slide">
+                <img src="../../img/slide3.jpg" alt="Zdjęcie">
             </div>
 
             <div class="slide">
+                <img src="../../img/slide4.jpg" alt="Zdjęcie">
             </div>
 
             <div class="slide">
+                <img src="../../img/slide5.jpg" alt="Zdjęcie">
+            </div>
+
+            <div class="slide">
+                <img src="../../img/slide6.jpg" alt="Zdjęcie">
+            </div>
+
+            <div class="slide">
+                <img src="../../img/slide7.jpg" alt="Zdjęcie">
+            </div>
+
+            <div class="slide">
+                <img src="../../img/slide8.jpg" alt="Zdjęcie">
             </div>
 
         </div>
@@ -52,6 +69,9 @@
             <span class="dot" onclick="showSlide(2)"></span>
             <span class="dot" onclick="showSlide(3)"></span>
             <span class="dot" onclick="showSlide(4)"></span>
+            <span class="dot" onclick="showSlide(5)"></span>
+            <span class="dot" onclick="showSlide(6)"></span>
+            <span class="dot" onclick="showSlide(7)"></span>
         </div>
 
         <div class="arrow-left-box" onclick="moveSlide(-1)">
@@ -66,54 +86,55 @@
 
         </div>
 
-        <div class="top-left" onclick="delay('../')">
-            <i class="fas fa-arrow-left"></i>
-        </div>
-
-        <div id="top-right">
-            <div class="info-icon" onclick="infoBox()">
-                <i class="fas fa-info" id="info-icon"></i>
-            </div>
-
-            <div class="info-content">
-
-                <h1>COŚ TAM</h1>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                </p>
-
-                <p>
-                    <b>Coś:</b> tam
-                </p>
-
-                <p>
-                    <b>Coś:</b> tam
-                </p>
-
-                <p>
-                    <b>Coś:</b> tam
-                </p>
-
-                <p>
-                    <b>Coś:</b> tam
-                </p>
-
-            </div>
-
-        </div>
-
 
 
     </div>
+
+    <div class="top-left" onclick="delay('../')">
+        <i class="fas fa-arrow-left"></i>
+    </div>
+
+    <div id="top-right">
+        <div class="info-icon" onclick="infoBox()">
+            <i class="fas fa-info" id="info-icon"></i>
+        </div>
+
+        <div class="info-content">
+
+            <h1>COŚ TAM</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            </p>
+
+            <p>
+                <b>Coś:</b> tam
+            </p>
+
+            <p>
+                <b>Coś:</b> tam
+            </p>
+
+            <p>
+                <b>Coś:</b> tam
+            </p>
+
+            <p>
+                <b>Coś:</b> tam
+            </p>
+
+        </div>
+
+    </div>
+
+    <div id="grid2" style="display: none;"></div>
 </body>
 
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../../js/jquery.easeScroll.min.js"></script>
-<script src="../../js/main.js"></script>
-<script src="../../js/slideshow.js"></script>
-<script src="../../js/info.js"></script>
+<script src="../../js/main.min.js"></script>
+<script src="../../js/slideshow.min.js"></script>
 
 </html>
