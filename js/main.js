@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
 
     document.getElementById("preloader").classList.add("fuccoff");
-    
+
     document.getElementById("grid2").classList.add("fuccoff");
 
 });
