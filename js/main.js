@@ -22,25 +22,6 @@ function Menu() {
     menu.classList.toggle("active");
 }
 
-function isIEorEDGE() {
-    if (navigator.appName == 'Microsoft Internet Explorer') {
-        document.getElementById("grid2").style.marginLeft = "120px";
-        return true; // IE
-    } else if (navigator.appName == "Netscape") {
-        return navigator.appVersion.indexOf('Edge') > -1; // EDGE
-    }
-
-    return false;
-}
-
-if (isIEorEDGE() == false) {
-
-    $(document).ready(function () {
-        $("body").easeScroll();
-    });
-
-}
-
 function infoBox() {
     var infoIcon = document.getElementById("info-icon");
     var infoBox = document.getElementById("top-right");

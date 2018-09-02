@@ -709,25 +709,10 @@ footer .made:hover .fa-heart {
     }
 
     .foto-right::before,
-    .foto-right::after {
-        right: -8px;
-        top: -8px;
-    }
-
+    .foto-right::after,
     .foto-left::before,
     .foto-left::after {
-        left: -8px;
-        top: -8px;
-    }
-
-    .foto-right::before,
-    .foto-left::before {
-        width: 16px;
-    }
-
-    .foto-right::after,
-    .foto-left::after {
-        height: 16px;
+        display: none;
     }
 
     .content .table p {
@@ -1494,26 +1479,11 @@ textarea:not(:focus)::-webkit-scrollbar {
     .contact {
         font-size: .75em;
     }
-
+    
     .form::before,
-    .form::after {
-        right: -8px;
-        top: -8px;
-    }
-
     .contact::before,
-    .contact::after {
-        left: -8px;
-        top: -8px;
-    }
-
-    .form::before,
-    .contact::before {
-        width: 16px;
-    }
-
     .form::after,
     .contact::after {
-        height: 16px;
+        display: none;
     }
 }
