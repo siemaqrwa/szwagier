@@ -217,8 +217,6 @@ a {
     height: 100vh;
     padding: 64px 128px;
     overflow-y: auto;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
