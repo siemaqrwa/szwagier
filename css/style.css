@@ -1311,7 +1311,7 @@ footer .made:hover .fa-heart {
     bottom: 8px;
     right: 8px;
     height: 2px;
-    background: #222;
+    background: #e3554f;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transition: -webkit-transform .3s ease-in-out;
@@ -1393,7 +1393,7 @@ textarea:not(:focus)::-webkit-scrollbar {
 .contact::before {
     content: "";
     position: absolute;
-    left: -24px;
+    right: -24px;
     top: -24px;
     width: 48px;
     height: 128px;
@@ -1404,7 +1404,7 @@ textarea:not(:focus)::-webkit-scrollbar {
 .contact::after {
     content: "";
     position: absolute;
-    left: -24px;
+    right: -24px;
     top: -24px;
     width: 256px;
     height: 48px;
