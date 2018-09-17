@@ -1,4 +1,4 @@
-window.addEventListener('load', function () {
+window.addEventListener('load', function (){
 
     document.getElementById("preloader").classList.add("fuccoff");
 
@@ -30,4 +30,11 @@ function infoBox() {
 
     infoIcon.classList.toggle("fa-arrow-right");
     infoIcon.classList.toggle("fa-info");
+}
+
+function modal() {
+    document.getElementById("modal").classList.add("show");
+    setTimeout(function(){
+        document.getElementById("modal").classList.remove("show");
+    }, 5000);
 }

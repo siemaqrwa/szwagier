@@ -50,13 +50,14 @@ a {
     left: -20%;
     right: -20%;
     bottom: 0;
-    background: #000;
+    background: #eee;
     z-index: 999;
     -webkit-transition: -webkit-transform .7s ease-out;
     transition: -webkit-transform .7s ease-out;
     transition: transform .7s ease-out;
     transition: transform .7s ease-out, -webkit-transform .7s ease-out;
-    will-change: transform;
+    transition: transform .7s ease-out, -webkit-transform .7s ease-out;
+    will-change: transform, -webkit-transform;
     -webkit-clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
 }
@@ -72,63 +73,50 @@ a {
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
     font-size: 3em;
     text-transform: uppercase;
     text-align: center;
 }
 
-#preloader .center::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    height: 4px;
-    background: repeating-linear-gradient( 45deg,
-    #333,
-    #333 10px,
-    #222 10px,
-    #222 20px);
-    background-attachment: fixed;
-    border-radius: 99px;
-    -webkit-animation: loading 2s infinite ease-in-out;
-    animation: loading 2s infinite ease-in-out;
+.roof {
+    height: 100px;
+    width: 100px;
+    border: solid #e3554f;
+    border-width: 10px 10px 0px 0px;
+    -webkit-transform: translateY(70px) rotate(-45deg);
+    transform: translateY(70px) rotate(-45deg);
+    -webkit-animation: roof 3s ease infinite;
+    animation: roof 3s ease infinite;
 }
 
-@-webkit-keyframes loading {
-    0% {
-        left: 0%;
-        right: 100%;
+@-webkit-keyframes roof {
+    0%,90% {
+        -webkit-transform: translateY(70px) rotate(-45deg);
+        transform: translateY(70px) rotate(-45deg);
     }
-
-    40% {
-        left: 0%;
-        right: 0%;
-    }
-
-    80%,
-    100% {
-        left: 100%;
-        right: 0%;
+    
+    70% {
+        -webkit-transform: translateY(30px) rotate(-45deg);
+        transform: translateY(30px) rotate(-45deg);
     }
 }
 
-@keyframes loading {
-    0% {
-        left: 0%;
-        right: 100%;
+@keyframes roof {
+    0%,90% {
+        -webkit-transform: translateY(70px) rotate(-45deg);
+        transform: translateY(70px) rotate(-45deg);
     }
+    
+    70% {
+        -webkit-transform: translateY(30px) rotate(-45deg);
+        transform: translateY(30px) rotate(-45deg);
+    }
+}
 
-    40% {
-        left: 0%;
-        right: 0%;
-    }
-
-    80%,
-    100% {
-        left: 100%;
-        right: 0%;
-    }
+.walls {
+    height: 100px;
+    width: 100px;
+    border: 10px solid #e3554f;
 }
 
 /* CONTAINER SECTION */
