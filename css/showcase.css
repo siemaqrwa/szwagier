@@ -85,8 +85,8 @@ a {
     border-width: 10px 10px 0px 0px;
     -webkit-transform: translateY(70px) rotate(-45deg);
     transform: translateY(70px) rotate(-45deg);
-    -webkit-animation: roof 3s ease infinite;
-    animation: roof 3s ease infinite;
+    -webkit-animation: roof 1s ease infinite;
+    animation: roof 1s ease infinite;
 }
 
 @-webkit-keyframes roof {
@@ -95,9 +95,9 @@ a {
         transform: translateY(70px) rotate(-45deg);
     }
     
-    70% {
-        -webkit-transform: translateY(30px) rotate(-45deg);
-        transform: translateY(30px) rotate(-45deg);
+    60% {
+        -webkit-transform: translateY(50px) rotate(-45deg);
+        transform: translateY(50px) rotate(-45deg);
     }
 }
 
@@ -107,9 +107,9 @@ a {
         transform: translateY(70px) rotate(-45deg);
     }
     
-    70% {
-        -webkit-transform: translateY(30px) rotate(-45deg);
-        transform: translateY(30px) rotate(-45deg);
+    60% {
+        -webkit-transform: translateY(50px) rotate(-45deg);
+        transform: translateY(50px) rotate(-45deg);
     }
 }
 

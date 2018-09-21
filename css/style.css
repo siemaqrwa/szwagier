@@ -352,8 +352,8 @@ a {
     border-width: 10px 10px 0px 0px;
     -webkit-transform: translateY(70px) rotate(-45deg);
     transform: translateY(70px) rotate(-45deg);
-    -webkit-animation: roof 3s ease infinite;
-    animation: roof 3s ease infinite;
+    -webkit-animation: roof 1s ease infinite;
+    animation: roof 1s ease infinite;
 }
 
 @-webkit-keyframes roof {
@@ -362,9 +362,9 @@ a {
         transform: translateY(70px) rotate(-45deg);
     }
     
-    70% {
-        -webkit-transform: translateY(30px) rotate(-45deg);
-        transform: translateY(30px) rotate(-45deg);
+    60% {
+        -webkit-transform: translateY(50px) rotate(-45deg);
+        transform: translateY(50px) rotate(-45deg);
     }
 }
 
@@ -374,9 +374,9 @@ a {
         transform: translateY(70px) rotate(-45deg);
     }
     
-    70% {
-        -webkit-transform: translateY(30px) rotate(-45deg);
-        transform: translateY(30px) rotate(-45deg);
+    60% {
+        -webkit-transform: translateY(50px) rotate(-45deg);
+        transform: translateY(50px) rotate(-45deg);
     }
 }
 
@@ -1491,6 +1491,7 @@ textarea:not(:focus)::-webkit-scrollbar {
     transition: opacity .5s ease, -webkit-transform .5s ease;
     transition: transform .5s ease, opacity .5s ease;
     transition: transform .5s ease, opacity .5s ease, -webkit-transform .5s ease;
+    white-space:nowrap;
     
 }
 
@@ -1508,4 +1509,10 @@ textarea:not(:focus)::-webkit-scrollbar {
     -webkit-transform: translateX(-50%) translateY(0);
     transform: translateX(-50%) translateY(0);
     opacity: 1;
+}
+
+@media (max-width:993px) {
+    .modal {
+        font-size: .75em;
+    }
 }

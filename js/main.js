@@ -1,8 +1,12 @@
-window.addEventListener('load', function (){
+window.addEventListener('load', function () {
 
-    document.getElementById("preloader").classList.add("fuccoff");
+    setTimeout(function () {
 
-    document.getElementById("grid2").classList.add("fuccoff");
+        document.getElementById("preloader").classList.add("fuccoff");
+
+        document.getElementById("grid2").classList.add("fuccoff");
+
+    }, 1000);
 
 });
 
@@ -34,7 +38,7 @@ function infoBox() {
 
 function modal() {
     document.getElementById("modal").classList.add("show");
-    setTimeout(function(){
+    setTimeout(function () {
         document.getElementById("modal").classList.remove("show");
     }, 5000);
 }
