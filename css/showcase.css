@@ -229,10 +229,12 @@ a {
         padding: 0;
     }
 
+/*
     .dots {
         display: none;
     }
 
+*/
     .top-left,
     #top-right .info-icon {
         font-size: 1em;
@@ -347,10 +349,10 @@ a {
 .dots {
     position: absolute;
     bottom: 32px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    width: 100vw;
     z-index: 1;
+    display: flex;
+    justify-content: center;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -366,6 +368,7 @@ a {
     transform: rotate(45deg);
     position: relative;
     cursor: pointer;
+    margin: 8px;
 }
 
 .dot::after {
@@ -480,3 +483,10 @@ a {
     }
 }
 
+@media (pointer: coarse) {
+    .arrow-left-box,
+    .arrow-right-box {
+        display: none;
+    }
+}
+}

@@ -44,3 +44,46 @@ function moveSlide(n) {
 
     slideshow();
 }
+
+function detectswipe(el, func) {
+    swipe_det = new Object();
+    swipe_det.sX = 0;
+    swipe_det.sY = 0;
+    swipe_det.eX = 0;
+    swipe_det.eY = 0;
+    var min_x = 20;
+    var max_x = 40;
+    var min_y = 40;
+    var max_y = 50;
+    var direc = "";
+    ele = document.getElementById(el);
+    ele.addEventListener('touchstart', function (e) {
+        var t = e.touches[0];
+        swipe_det.sX = t.screenX;
+        swipe_det.sY = t.screenY;
+    }, false);
+    ele.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+        var t = e.touches[0];
+        swipe_det.eX = t.screenX;
+        swipe_det.eY = t.screenY;
+    }, false);
+    ele.addEventListener('touchend', function (e) {
+        if (swipe_det.eX > swipe_det.sX) direc = "r";
+        else direc = "l";
+
+        if (direc != "") {
+            if (typeof func == 'function') func(el, direc);
+        }
+        direc = "";
+    }, false);
+}
+
+function swipe(el, d) {
+    if(d == "l")
+        moveSlide(1);
+    else if(d == "r")
+        moveSlide(-1);
+}
+
+detectswipe('slideshow', swipe);
